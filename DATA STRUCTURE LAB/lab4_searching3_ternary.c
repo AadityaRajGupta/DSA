@@ -43,7 +43,7 @@ int ternary_searching(int a[], int key, int start, int end)
     int mid1 = start + ((end-start) / 3);
     int mid2 = end - ((end-start) / 3);
     printf("\nstart: %d ,mid1:%d ,mid2: %d ,end: %d \n", start, mid1, mid2, end);
-    if (end - start >= 1)
+    if (end - start >= 0 )
     //if (start<=end)
     {
         if (a[mid1] == key)
