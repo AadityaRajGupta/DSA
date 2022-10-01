@@ -83,7 +83,7 @@ int determinant(int a[][size], int n)
 
     for (i = 0; i < n; i++)
     {
-        cofactor(a, 0, i, 4, work);
+        cofactor(a, 0, i, n, work);
         d = d + (sign * a[0][i] * determinant(work, n - 1));
         sign = -sign;
     }
