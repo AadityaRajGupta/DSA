@@ -243,12 +243,13 @@ int f(int n,int a[])
     a[n] = value;
     return (value);
 }
+/* upper bhi define kara hai line 43 quick sort ke liye
 void swap(int *a, int *b)
 {
     int temp = *a;
     *a = *b;
     *b = temp;
-}
+}*/
 int selection_sort()
 {
     int a[10] = {2, 6, 5, 68, 4, 5, 1, 5, 6, 7}, min_i;
@@ -330,10 +331,29 @@ int bubble_sort()
     }
     return 0;
 }
+
+//ROMAN TO INT : LEETCODE(1 october)
+int romanToInt(char * s){
+    int table[100]={
+        ['I']=1,['V']=5,['X']=10,['L']=50,['C']=100,['D']=500,['M']=1000,
+    };
+    int sum=0;
+    for(int i=0;s[i];i++)
+    {
+        if(table[s[i]] < table[s[i+1]])
+            sum=sum- table[s[i]];
+        else
+            sum=sum+table[s[i]];
+    }
+    return sum;
+}
+
+
 int main()
 {
 
-    insertion_sort();
+    int num=romanToInt("XII");
+    printf("%d ",num);
     return 0;
 }
 int main__()
