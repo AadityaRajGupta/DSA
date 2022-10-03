@@ -349,20 +349,83 @@ int romanToInt(char * s){
 }
 
 
-int main()
+int main_for_romantoint()
 {
 
     int num=romanToInt("XII");
     printf("%d ",num);
     return 0;
 }
-int main__()
+#include <stdio.h>
+#include <string.h>
+int win(void) {
+	// your code goes here
+	int t,l,i,count1,count0;
+    char str[101];
+	scanf("%d",&t);
+	while(t)
+	{
+	    scanf("%s",str);
+	    l=strlen(str);
+	    count1=0;
+	    count0=0;
+        printf("len:%d\n\n",l);
+	    if (l<=20)
+	    {
+	        for(i=0;i<l;i++)
+	        {
+                //printf("%d",)
+	            if (str[i]=='1')
+	            {
+	                count1++;
+	            }
+	        }
+	        if (count1==11)
+	        {
+	            printf("WIN\n");
+	        }
+	        else
+	        {
+	            printf("LOSE\n");
+	        }
+	    }
+	    else
+	    {
+	        for(i=0;i<l;i++)
+	        {
+	            if (str[i]=='1')
+	            {
+	                count1++;
+	            }
+	            else
+	            {
+	                count0++;
+	            }
+	        }
+	        if (count1>count0)
+	        {
+	            printf("WIN\n");
+	        }
+	        else
+	        {
+	            printf("LOSE\n");
+	        }
+	    }
+	    t--;
+	    
+	}
+	return 0;
+}
+
+
+int main()
 {
 #ifndef ONLINE_JUDGE
     freopen("input.txt", "r", stdin);
     freopen("output.txt", "w", stdout);
 #endif
-
+    win();
+    return 0;
     int a[100], b[100], size, ele, work[100], size_a, size_b;
 
     // size=initialization(a);

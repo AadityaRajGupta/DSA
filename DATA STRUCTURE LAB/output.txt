@@ -1,0 +1,6 @@
+len:13
+
+WIN
+len:14
+
+LOSE
