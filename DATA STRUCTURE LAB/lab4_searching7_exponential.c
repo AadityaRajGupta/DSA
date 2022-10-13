@@ -21,38 +21,52 @@ int initialization(int a[])
     }
     return size;
 }
-
-int jump_searching(int a[], int key, int size)
+int min(int a,int b)
 {
-    int step = sqrt(size);
-    int index = 0, i, j;
-    for (i = 0; i < size; i = i + step)
+    if (a<b)
     {
-        if (a[i] == key)
+        return a;
+    }
+    return b;
+}
+int binary_searching(int a[],int key,int start,int end)
+{
+    int mid=(start+end)/2;
+    if (end-start>=1)
+    {
+        if (a[mid]==key)
         {
-            return i;
+            return mid;
         }
-        while (a[i] > key)
+        else if (a[mid]>key)
         {
-            index = i - size + 1;
-            for (j = index; j < size; j++)
-            {
-                if (a[j] == key)
-                {
-                    return j;
-                }
-            }
+            return binary_searching(a,key,start,mid-1);
+        }
+        else
+        {
+            return binary_searching(a,key,mid+1,end);
         }
     }
     return -1;
 }
+int exponential_searching(int a[], int n, int key)
+{
+    if (a[0] == key)
+        return 0;
+
+    int i = 1;
+    while (i < n && a[i] <= key)
+        i = i*2;
+
+    return binary_searching(a, i/2,min(i, n-1), key);
+}
 int main()
 {
-    int a[5], size;
+    int a[5], size,key=5;
     size = initialization(a);
     print(a, size);
 
-    int index = jump(a,5,size);//jump_searching(a, 5, size);
+    int index = exponential_searching(a,key,size);
     if (index >= 0)
         printf("Number is at [%d] index", index);
     else

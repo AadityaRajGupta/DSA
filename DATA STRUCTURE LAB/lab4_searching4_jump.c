@@ -21,7 +21,6 @@ int initialization(int a[])
     }
     return size;
 }
-
 int jump_searching(int a[], int key, int size)
 {
     int step = sqrt(size);
@@ -32,10 +31,10 @@ int jump_searching(int a[], int key, int size)
         {
             return i;
         }
-        while (a[i] > key)
+        if (a[i] > key)
         {
-            index = i - size + 1;
-            for (j = index; j < size; j++)
+            index = i - step + 1;
+            for (j = index; j < i; j++)
             {
                 if (a[j] == key)
                 {
@@ -48,11 +47,11 @@ int jump_searching(int a[], int key, int size)
 }
 int main()
 {
-    int a[5], size;
+    int a[5], size,key=5;
     size = initialization(a);
     print(a, size);
 
-    int index = jump(a,5,size);//jump_searching(a, 5, size);
+    int index = jump_searching(a,key,size);
     if (index >= 0)
         printf("Number is at [%d] index", index);
     else

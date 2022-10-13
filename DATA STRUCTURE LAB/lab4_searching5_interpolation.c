@@ -21,38 +21,36 @@ int initialization(int a[])
     }
     return size;
 }
-
-int jump_searching(int a[], int key, int size)
+int interpolation_search(int a[],int l,int h,int key)
 {
-    int step = sqrt(size);
-    int index = 0, i, j;
-    for (i = 0; i < size; i = i + step)
+    int pos;
+
+    if (key>=a[l] && key<=a[h] && l<=h)
     {
-        if (a[i] == key)
+        pos = l + ( ((double)(h - l)*(key - a[l]) / (a[h] - a[l]))  );
+
+        if (a[pos]==key)
         {
-            return i;
+            return pos;
         }
-        while (a[i] > key)
+        else if (key<a[pos])
         {
-            index = i - size + 1;
-            for (j = index; j < size; j++)
-            {
-                if (a[j] == key)
-                {
-                    return j;
-                }
-            }
+            return interpolation_search(a,l,pos-1,key);
+        }
+        else
+        {
+            return interpolation_search(a,pos+1,h,key);
         }
     }
     return -1;
 }
 int main()
 {
-    int a[5], size;
+    int a[5], size,key=5;
     size = initialization(a);
     print(a, size);
 
-    int index = jump(a,5,size);//jump_searching(a, 5, size);
+    int index = interpolation_search(a,0,size-1,key);
     if (index >= 0)
         printf("Number is at [%d] index", index);
     else
