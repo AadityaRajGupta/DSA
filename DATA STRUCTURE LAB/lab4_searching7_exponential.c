@@ -21,56 +21,67 @@ int initialization(int a[])
     }
     return size;
 }
-int min(int a,int b)
+int binary_search(int a[],int start,int end,int key)
 {
-    if (a<b)
+    if (start<=end)
     {
-        return a;
-    }
-    return b;
-}
-int binary_searching(int a[],int key,int start,int end)
-{
-    int mid=(start+end)/2;
-    if (end-start>=1)
-    {
+        int mid=(start+end)/2;
         if (a[mid]==key)
         {
             return mid;
         }
         else if (a[mid]>key)
         {
-            return binary_searching(a,key,start,mid-1);
+            return binary_search(a,start,mid-1,key);
         }
-        else
+        else 
         {
-            return binary_searching(a,key,mid+1,end);
+            return binary_search(a,mid+1,end,key);
         }
     }
     return -1;
 }
-int exponential_searching(int a[], int n, int key)
+int exponential_searching(int a[], int size, int key)
 {
     if (a[0] == key)
         return 0;
 
     int i = 1;
-    while (i < n && a[i] <= key)
+    while (i < size && a[i] <= key)
+    {
+        if (a[i]==key)
+        {
+            return i;
+        }
         i = i*2;
-
-    return binary_searching(a, i/2,min(i, n-1), key);
+    }
+    return binary_search(a,i/2,i,key);    //comment this line to inactivate the binary search
+    // binary is used because as range increase drastically for large value and linear search will take more time than binary search since all array is sorted initially
+    /* uncomment this to try linear search 
+    for(int j=i/2;j<i && j<size;j++)
+    {
+        if (a[j]==key)
+        {
+            return j;
+        }
+    }
+    return -1; */
 }
 int main()
 {
-    int a[5], size,key=5;
-    size = initialization(a);
+    int a[100], size=100,key=75;
+    // size = initialization(a);
+    for(int i=0,num=0;i<size;i++,num=num+2)
+    {
+        a[i]=num;
+    }
     print(a, size);
 
-    int index = exponential_searching(a,key,size);
+    int index = exponential_searching(a,size,key);
     if (index >= 0)
         printf("Number is at [%d] index", index);
     else
-        printf("Number is not exist in the array");
+        printf("Number does not exist in the array");
 
     return 0;
 }
