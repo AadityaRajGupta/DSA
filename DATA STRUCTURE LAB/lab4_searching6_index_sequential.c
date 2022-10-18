@@ -57,16 +57,16 @@ int index_sequential_searching(int a[], int key, int size)
     }
     for (i = ind_table[index - 1]; i < size; i++)
     {
-        if (key == a[j])
+        if (key == a[i])
         {
-            return j;
+            return i;
         }
     }
     return -1;
 }
 int main()
 {
-    int a[10], size, key = 5;
+    int a[10], size, key = 10;
     size = initialization(a);
     print(a, size);
     int index = index_sequential_searching(a, key, size);
