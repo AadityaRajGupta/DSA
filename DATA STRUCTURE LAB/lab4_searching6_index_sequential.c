@@ -55,13 +55,21 @@ int index_sequential_searching(int a[], int key, int size)
             }
         }
     }
+    for (i = ind_table[index - 1]; i < size; i++)
+    {
+        if (key == a[j])
+        {
+            return j;
+        }
+    }
+    return -1;
 }
 int main()
 {
-    int a[10], size,key=5;
+    int a[10], size, key = 5;
     size = initialization(a);
     print(a, size);
-    int index = index_sequential_searching(a,key,size);
+    int index = index_sequential_searching(a, key, size);
     if (index >= 0)
         printf("Number is at [%d] index", index);
     else
