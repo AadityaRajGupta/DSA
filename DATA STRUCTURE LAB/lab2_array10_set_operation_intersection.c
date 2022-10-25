@@ -67,20 +67,18 @@ int intersection_program(int a[],int b[],int size_a,int size_b,int work[])
     {
         if (a[i]<b[j])
         {
-            work[index++]=a[i++];
+            i++;
         }
         else if (a[i]>b[j])
         {
-            work[index++]=b[j++];
+            j++;
         }
         else 
         {
-            i++;
+            work[index++]=a[i++];
             j++;
         }
     }
-    while (i<size_a)    work[index++]=a[i++];
-    while (j<size_b)    work[index++]=b[j++];
 
     return index;
 }
