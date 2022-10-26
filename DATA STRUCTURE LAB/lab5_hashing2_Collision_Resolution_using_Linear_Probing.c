@@ -38,7 +38,7 @@ int h(int key,int m)
 int main()
 {
     int size = 10; // maximum hash table size
-    int n, data, i,m,temp,index;
+    int n, data, i,m,temp,index,flag;
     printf("\n\nENTER NUMBER OF DATA WANT TO ENTER:");
     scanf("%d", &n);
     printf("\n\nENTER YOUR DATA:\n");
@@ -48,29 +48,26 @@ int main()
         temp++;
     }
     m=temp--;
+    size = m;         // hash table size which is been used
 
     while (n)
     {
-        scanf("%d",&data);
-        index=h(data,m);
-        if (dat[index]==0)
+        flag=0;
+        scanf("%d", &data);
+        for (i = 0; i < size; i++)
         {
-            dat[index]=data;
-        }
-        else
-        {
-            temp = index;
-            while (dat[temp] != 0)
+            index = (h(data, m) + (i)) % m;
+            if (dat[index] == 0)
             {
-                temp = temp % 9;
-                temp++;
-                if (temp == index)
-                {
-                    printf("NO LOCATION AVAILABLE TO STORE THE %d DATA",data);
-                    return -1;
-                }
+                dat[index] = data;
+                flag=1;
+                break;
             }
-            dat[temp] = data;
+        }
+        if (flag==0)
+        {
+        printf("NO LOCATION AVAILABLE TO STORE THE %d DATA", data);
+        return -1;
         }
         n--;
     }
