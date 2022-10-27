@@ -1,15 +1,1 @@
-MOVE DISK 1 from A to B
-MOVE DISK 2 from A to C
-MOVE DISK 1 from B to C
-MOVE DISK 3 from A to B
-MOVE DISK 1 from C to A
-MOVE DISK 2 from C to B
-MOVE DISK 1 from A to B
-MOVE DISK 4 from A to C
-MOVE DISK 1 from B to C
-MOVE DISK 2 from B to A
-MOVE DISK 1 from C to A
-MOVE DISK 3 from B to C
-MOVE DISK 1 from A to B
-MOVE DISK 2 from A to C
-MOVE DISK 1 from B to C
+GIVEN STRING [HELLO MY YM OLLEH] IS PALINDROME
