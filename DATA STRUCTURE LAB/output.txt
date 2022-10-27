@@ -1,7 +1,15 @@
-chain[0]-->0 -->7 -->14 -->NULL
-chain[1]-->1 -->15 -->NULL
-chain[2]-->NULL
-chain[3]-->3 -->NULL
-chain[4]-->NULL
-chain[5]-->NULL
-chain[6]-->NULL
+MOVE DISK 1 from A to B
+MOVE DISK 2 from A to C
+MOVE DISK 1 from B to C
+MOVE DISK 3 from A to B
+MOVE DISK 1 from C to A
+MOVE DISK 2 from C to B
+MOVE DISK 1 from A to B
+MOVE DISK 4 from A to C
+MOVE DISK 1 from B to C
+MOVE DISK 2 from B to A
+MOVE DISK 1 from C to A
+MOVE DISK 3 from B to C
+MOVE DISK 1 from A to B
+MOVE DISK 2 from A to C
+MOVE DISK 1 from B to C
