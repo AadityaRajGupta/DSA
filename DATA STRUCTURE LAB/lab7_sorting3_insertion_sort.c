@@ -41,7 +41,7 @@ void insertion_sort(int a[],int size)
 }
 int main()
 {
-    int a[10],size,i;
+    int a[10],size;
     size=initialize(a);
 
     printf("ARRAY BEFORE SORTING:\n");
