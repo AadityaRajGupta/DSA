@@ -1,11 +1,22 @@
 #include <stdio.h>
-int fib(int num)
+int dat[100];
+int fibonacci(int num)
 {
+    int value;
+    if (dat[num]!=0)
+    {
+        return dat[num];
+    }
     if (num == 0 || num == 1)
     {
-        return num;
+        value=num;
     }
-    return (fib(num - 1) + fib(num - 2));
+    else
+    {
+        value=(fibonacci(num - 1) + fibonacci(num - 2));
+    }
+    dat[num] = value;
+    return (value);
 }
 int main()
 {
