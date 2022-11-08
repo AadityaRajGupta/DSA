@@ -13,6 +13,9 @@
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
+#include <windows.h>
+#include <stdlib.h>
+#include <conio.h>
 
 struct library
 {
@@ -75,7 +78,7 @@ void displayall()
     }
     else
     {
-        printf("\nNO DATA AVAILABLE TO DISPLAY!!!\nPLEASE ADD ANY DATA FIRST\n\n");
+        printf("\n\nNO DATA AVAILABLE TO DISPLAY!!!\nPLEASE ADD ANY DATA FIRST\n\n");
     }
 }
 void add()
@@ -104,7 +107,7 @@ void display_author()
     strcpy(lib[2], "          BOOK TITLE          ");
     strcpy(lib[3], " ISSUED(YES/NO) ");
 
-    printf("\nENTER AUTHOR NAME TO FIND ALL THE BOOK:");
+    printf("\n\nENTER AUTHOR NAME TO FIND ALL THE BOOK:");
     gets(ch);
 
     while (i != input)
@@ -138,14 +141,20 @@ void display_author()
     }
     else
     {
-        printf("NO BOOK AVAILABLE WITH AUTHOR NAME %s !!!\n", ch);
+        printf("\n\nNO BOOK AVAILABLE WITH AUTHOR NAME [%s] !!!\n", ch);
     }
 }
 void bookcount_title()
 {
     char ch[30];
     int i, count = 0;
-    printf("\nENTER THE TITLE OF BOOK:");
+    char lib[4][35];
+    strcpy(lib[0], " ACCESSION NUMBER ");
+    strcpy(lib[1], "        NAME OF AUTHOR        ");
+    strcpy(lib[2], "          BOOK TITLE          ");
+    strcpy(lib[3], " ISSUED(YES/NO) ");
+
+    printf("\n\nENTER THE TITLE OF BOOK:");
     gets(ch);
     for (i = 0; i < input; i++)
     {
@@ -156,7 +165,25 @@ void bookcount_title()
     }
     if (count)
     {
-        printf("\nNUMBER OF BOOKS OF TITLE [%s]: %d\n", ch, count);
+        printf("\nNUMBER OF BOOKS OF TITLE [%s]: %d\n\n", ch, count);
+        printf("\n\nALL BOOK INFORMATION WITH TITLE %s:\n", ch);
+        printf("=======================================================================================================\n| ");
+        for (i = 0; i < 4; i++)
+        {
+            printf("%s| ", lib[i]);
+        }
+        printf("\n=======================================================================================================\n");
+        for (i = 0; i < input; i++)
+        {
+            if (!strcmp(l[i].author_name, ch))
+            {
+                printf("|%10d         |", l[i].accession_number);
+                printf("%31s|", l[i].author_name);
+                printf("%31s|", l[i].title);
+                (l[i].flag == 1) ? printf("       YES       |") : printf("        NO       |");
+                printf("\n=======================================================================================================\n");
+            }
+        }
     }
     else
     {
@@ -165,12 +192,20 @@ void bookcount_title()
 }
 void bookcount()
 {
-    printf("\nTOTAL NUMBER OF BOOK IN THE LIBRARY:%d\n", input);
+    int i,count=0;
+    for(i=0;i<input;i++)
+    {
+        if(l[i].flag==0)
+        {
+            count++;
+        }
+    }
+    printf("\n\nTOTAL NUMBER OF BOOK IN THE LIBRARY:%d\n", count);
 }
 void issue()
 {
     int a, i, j, count = 0;
-    printf("ENTER THE ACCESSION NUMBER OF BOOK:");
+    printf("\n\nENTER THE ACCESSION NUMBER OF BOOK:");
     scanf("%d", &a);
     for (i = 0; i < input; i++)
     {
@@ -179,27 +214,71 @@ void issue()
             l[i].flag = 1;
             count = 1;
             printf("\nBOOK ISSUED\n");
-            for (j = i; j < input - 1; j++)
-            {
-                l[i] = l[i + 1];
-            }
+            // DATA DELETE KARNE KE LIYE JHO ISSUE HO GAYA HAI
+            // for (j = i; j < input - 1; j++)
+            // {
+            //     l[i] = l[i + 1];
+            // }
         }
     }
-    if (count)
+    if (count==0)
     {
-        input--;
-    }
-    else
-    {
-        printf("\nINVALID ACCESSION NUMBER!!!\nPLEASE ENTER CORRECT ACCESSION NUMBER\n");
+        printf("\n\nINVALID ACCESSION NUMBER!!!\nPLEASE ENTER CORRECT ACCESSION NUMBER\n");
     }
 }
 
+void menu()
+{
+    char m[7][65] = {"1 - DISPLAY ALL BOOK INFORMATION", "2 - ADD A NEW BOOK", "3 - DISPLAY ALL THE BOOKS IN THE LIBRARY OF A PARTICULAR AUTHOR", "4 - DISPLAY THE NUMBER OF BOOKS OF A PARTICULAR TITLE", "5 - DISPLAY THE TOTAL NUMBER OF BOOKS IN THE LIBRARY", "6 - ISSUE A BOOK", "7 - EXIT"};
+    int i = 0;
+    printf("\t\t\tMAIN MENU");
+    while (i < 7)
+    {
+        printf("\n %s", m[i]);
+        i++;
+    }
+}
+int main()
+{
+    char ch;
+    system("cls");
+    do
+    {
+        printf("\n\n=======================================================================================================================================================\n");
+        printf("\t\t\t\t\t\t\tLIBRARY MANAGEMENT SYSTEM");
+        printf("\n=======================================================================================================================================================\n\n");
+        menu();
+        printf("\n\n\tPLEASE ENTER YOUR CHOICE(1-6): ");
+        ch = _getch();
+        printf("%c", ch);
+        switch (ch)
+        {
+        case '1':
+            displayall();
+            break;
+        case '2':
+            add();
+            break;
+        case '3':
+            display_author();
+            break;
+        case '4':
+            bookcount_title();
+            break;
+        case '5':
+            bookcount();
+            break;
+        case '6':
+            issue();
+            break;
+        case '7':
+            exit(0);
+        }
+    } while (ch != '7');
 
-#include <windows.h>
-#include <stdlib.h>
-#include <conio.h>
-
+    return 0;
+}
+/*
 void gotoxy(short a, short b) // Custom gotoxy() function for vs code not for turbo c
 {
     COORD coordinates; // Data type of co-ordinates
@@ -330,3 +409,4 @@ int main()
         }
     }
 }
+*/
