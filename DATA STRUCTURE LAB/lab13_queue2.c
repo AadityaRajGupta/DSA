@@ -16,16 +16,6 @@ struct stack
     int num;
 } *s;
 
-int empty();
-int sort();
-int create();
-// int push_a(int item);
-// int push_b(int item);
-// int pop_a();
-// int pop_b();
-int display_a();
-int display_b();
-
 int empty()
 {
     while (s->top2 != -1)
@@ -52,24 +42,6 @@ int sort()
         }
     }
 }
-// int push_a(int item)
-// {
-//     s->a[++s->top1] = item;
-// }
-// int push_b(int item)
-// {
-//     s->b[++s->top2] = item;
-// }
-// int pop_a()
-// {
-//     int item = s->a[s->top1--];
-//     return item;
-// }
-// int pop_b()
-// {
-//     int item = s->b[s->top2--];
-//     return item;
-// }
 int create()
 {
     s->top1 = -1;
