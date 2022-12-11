@@ -1,84 +1,109 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define size 10
-#define push_a(item) s->a[++s->top1] = item;
-#define push_b(item) s->b[++s->top2] = item;
-#define pop_a() s->a[s->top1--];
-#define pop_b() s->b[s->top2--];
+#define size 5
 
-struct stack
+struct queue
 {
     int a[size];
-    int b[size];
-    int top1;
-    int top2;
-    int num;
-} *s;
+    int f;
+    int r;
+}*q;
 
-int empty()
-{
-    while (s->top2 != -1)
-        push_a(pop_b());
-}
-int sort()
-{
-    int temp = pop_a();
-    push_b(temp);
-    int arr, brr;
-    while(s->top2!=s->num)
-    {
-        arr = s->a[s->top1];//printf("arr: %d ",arr);
-        brr = s->b[s->top2];//printf("brr: %d ",brr);
-        if (brr < arr)
-        {
-            push_b(pop_a());
-        }
-        else
-        {
-            arr = pop_a();
-            empty();
-            push_b(arr);
-        }
-    }
-}
 int create()
 {
-    s->top1 = -1;
-    s->top2 = -1;
+    q->f=-1;
+    q->r=-1;
 }
-int display_a()
+
+int isempty()
 {
-    printf("\nA:");
-    for (int i = 0; i <= s->top1; i++)
-        printf("%d ", s->a[i]);
-    printf("\n");
+    if (q->f==q->r && q->f!=-1)
+        return 1;
+    return 0;
 }
-int display_b()
+
+int isfull()
 {
-    printf("B:");
-    for (int i = 0; i <= s->top2; i++)
-        printf("%d ", s->b[i]);
-    printf("\n");
+    // if(q->r==size-1)
+    if(q->r==size-1 && q->f==-1)
+        return 1;
+    if((q->r+1)%size==q->f && q->f!=-1 )
+        return 1;
+    return 0;
+}
+int insertion(int item)
+{
+    if (!isfull())
+    {
+        q->r = ++q->r % size;
+        q->a[q->r] = item;
+        printf("\n");
+        // printf("\n\nf: %d r:%d\n",q->f,q->r);
+    }
+    else
+        printf("\n\nQUEUE IS FULL!!!\n\n");
+}
+int deletion()
+{
+    if (!isempty())
+    {
+        int item=q->a[++q->f%size];
+        // return item;
+        printf("\nDELETED ELEMENT: %d\n\n",item);
+    }
+    else
+        printf("\nQUEUE IS EMPTY!!!\n\n");
+    return 0;
+}
+int input()
+{
+    int item;
+    printf("\n\nENTER ANY NUMBER:");
+    scanf("%d",&item);
+    return item;
+}
+int display()
+{
+    if (!isempty())
+    {
+        // printf("\n\nf: %d r:%d\n",q->f,q->r);
+        printf("\n\nQUEUE:");
+        int i = q->f + 1;
+        for (; i != q->r; i = (i + 1) % size)
+        {
+            printf("%d ", q->a[i]);
+        }
+        printf("%d \n\n", q->a[i]);
+    }
+    return 0;
 }
 int main()
 {
-    s = (struct stack *)malloc(sizeof(struct stack));
-    int item,number;
+    int choose;
+    q=(struct queue *) malloc (sizeof(struct queue));
     create();
-
-    printf("NUMBER OF ELEMENT WANT TO ENTER:");
-    scanf("%d",&number);
-    number--;
-    s->num=number;
-
-    while(s->top1!=s->num)
+    while (1)
     {
-        scanf("%d", &item);
-        push_a(item);
+        printf("\n1. INSERTION\n2. DELETION\n3. DISPLAY\n4. EXIT\nENTER YOUR CHOICE:");
+        scanf("%d",&choose);
+        switch(choose)
+        {
+            case 1:
+                insertion(input());
+                break;
+            case 2:
+                deletion();
+                break;
+            case 3:
+                display();
+                break;
+            case 4:
+                return 0;
+            default:
+                printf("\n\nINVALID CHOICE!!!\n\n");
+                break;
+        }
     }
-    sort();
-    display_a();
-    display_b();
     return 0;
 }
