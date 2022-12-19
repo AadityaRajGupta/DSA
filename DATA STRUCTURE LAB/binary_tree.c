@@ -54,6 +54,16 @@ int menu()
 
 }
 
+int max_a(int a,int b)
+{
+    return (a>b) ? a : b;
+}
+int height(struct node *hello)
+{
+    if(hello!=NULL)
+        return max_a(height(hello->left),height(hello->right))+1;
+}
+
 int main()
 {
     struct node *root = (struct node *) malloc (sizeof(struct node));
@@ -64,5 +74,8 @@ int main()
     root->left->right=newnode(5);
 
     inorder_traversal(root);
+
+    printf("\n\nHEIGHT: %d",height(root));
+
     return 0;
 }
