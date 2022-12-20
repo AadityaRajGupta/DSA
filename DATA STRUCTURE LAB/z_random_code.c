@@ -3,6 +3,10 @@
 #include <time.h>
 #include <stdlib.h>
 #include <string.h>
+
+// random forest
+// xgpoost
+
 /**
  * *hello world
  * !alert
@@ -10,10 +14,6 @@
  * TODO: execute
  * @param Aaditya hello
  * //hello
- */
-/**
- * ?Program for Set Difference
- * ?Program for Set Symmetric Difference
  */
 
 void print(int a[], int size)
@@ -456,3 +456,21 @@ int main()
     print(work,size); */
     return 0;
 }
+
+
+//any key ASCII VALUE
+char key()
+{
+    char c;
+    c = _getch();
+    if (c == -32)
+        c = _getch();
+    return c;
+}
+int main_for_key_ASCII_value()
+{
+    printf("%d",key());
+    return 0;
+}
+
+
