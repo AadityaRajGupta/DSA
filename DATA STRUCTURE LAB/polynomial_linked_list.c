@@ -7,7 +7,6 @@ struct node
     int power;
     struct node *right;
     struct node *left;
-
 };
 
 int insertion(struct node *start)
