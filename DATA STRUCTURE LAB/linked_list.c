@@ -75,6 +75,26 @@ int search(int num)
     }
     return 0;
 }
+int sort()
+{
+    struct node *i,*j;
+    i=head;
+    while(i!=NULL)
+    {
+        j=head;
+        while(j!=NULL)
+        {
+            if (i->data<=j->data)
+            {
+                int temp=i->data;
+                i->data=j->data;
+                j->data=temp;
+            }
+            j=j->next;
+        }
+        i=i->next;
+    }
+}
 int main()
 {
     head=(struct node *)malloc(sizeof(struct node));
