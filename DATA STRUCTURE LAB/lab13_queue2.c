@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// Program of Array Implementaion of CircularQueue
+
 #define size 5
 
 struct queue
@@ -18,17 +20,14 @@ int create()
 
 int isempty()
 {
-    if (q->f==q->r && q->f!=-1)
+    if (q->f==-1)
         return 1;
     return 0;
 }
 
 int isfull()
 {
-    // if(q->r==size-1)
-    if(q->r==size-1 && q->f==-1)
-        return 1;
-    if((q->r+1)%size==q->f && q->f!=-1 )
+    if ((q->f==0 && q->r==size-1) || q->f==q->r+1)
         return 1;
     return 0;
 }
@@ -36,10 +35,10 @@ int insertion(int item)
 {
     if (!isfull())
     {
-        q->r = ++q->r % size;
-        q->a[q->r] = item;
-        printf("\n");
-        // printf("\n\nf: %d r:%d\n",q->f,q->r);
+        if (q->f==-1)
+            q->f=0;
+        q->r=(q->r+1)%size;
+        q->a[q->r]=item;
     }
     else
         printf("\n\nQUEUE IS FULL!!!\n\n");
@@ -48,8 +47,14 @@ int deletion()
 {
     if (!isempty())
     {
-        int item=q->a[++q->f%size];
-        // return item;
+        int item=q->a[q->f];
+        if (q->f==q->r)
+        {
+            q->f=-1;
+            q->r=-1;
+        }
+        else
+            q->f=(q->f+1)%size;
         printf("\nDELETED ELEMENT: %d\n\n",item);
     }
     else
@@ -69,7 +74,7 @@ int display()
     {
         // printf("\n\nf: %d r:%d\n",q->f,q->r);
         printf("\n\nQUEUE:");
-        int i = q->f + 1;
+        int i = q->f;
         for (; i != q->r; i = (i + 1) % size)
         {
             printf("%d ", q->a[i]);
