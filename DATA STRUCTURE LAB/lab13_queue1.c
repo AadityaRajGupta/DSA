@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define size 5
+#define size 2
 // Program of Array Implementaion of Linear Queue
 
 /*
@@ -25,9 +25,8 @@ int create()
 }
 int isempty()
 {
-    if (q->f == q->r)
+    if (q->r == -1)
     {
-        create();
         return 1;
     }
     return 0;
@@ -48,7 +47,11 @@ int insertion(int item)
 int deletion()
 {
     if (!isempty())
-        printf("\nDELETED ELEMENT: %d", q->a[++q->f]);
+    {
+        printf("\nDELETED ELEMENT: %d\n", q->a[++q->f]);
+        if(q->f==q->r)
+            create();
+    }
     else
         printf("\nQUEUE IS EMPTY!!!");
     return 0;
@@ -61,7 +64,10 @@ int display()
         int i;
         for (i = q->f + 1; i != q->r + 1; i++)
             printf("%d ", q->a[i]);
+        printf("\n");
     }
+    else
+        printf("\nQUEUE IS EMPTY!!!");
     return 0;
 }
 int input()
@@ -71,7 +77,6 @@ int input()
     scanf("%d", &item);
     return item;
 }
-
 int main()
 {
     int choose;
