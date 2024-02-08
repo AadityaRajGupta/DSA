@@ -4,6 +4,23 @@
 #include <stdlib.h>
 #include <string.h>
 
+
+// Assertions are statements used to test assumptions made by programmers. 
+// For example, we may use assertion to check if the pointer returned by malloc() is NULL or not. 
+
+// The below program runs fine because NDEBUG is defined
+# define NDEBUG  // isse assertion ignore hota hai 
+# include <assert.h>
+
+int main()
+{
+    int x = 7;
+    assert (x==5);
+    return 0;
+}
+
+
+
 // random forest
 // xgpoost
 

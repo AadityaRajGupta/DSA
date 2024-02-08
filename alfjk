@@ -1,0 +1,512 @@
+[33mcommit ebf25f2a6149000900e01454dd929f84d984653d[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Wed Feb 8 20:50:51 2023 +0530
+
+    correction in queue
+
+[33mcommit 344fb206ef3af10af1556d00710893a4bc3f3513[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Tue Jan 24 01:29:20 2023 +0530
+
+     counting nodes containing even & odd information
+
+[33mcommit 8f6f84ef51d8cd2374a965e919354f420b34fd7b[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Mon Jan 23 18:22:26 2023 +0530
+
+    Creation of Copy of the Linked list
+
+[33mcommit 52792495ac4e342e1b8ade0f576753e52525cb06[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Sun Jan 22 00:20:56 2023 +0530
+
+    insert item at any given position in linked list
+
+[33mcommit 579a6a382e23811cbb9c42a60fa50a2b0c499a2e[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Sat Jan 21 00:10:30 2023 +0530
+
+    Program to implement Linear search.
+
+[33mcommit bdedb7ca939f64e95b1cc873be530e4f5c0960ac[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Fri Jan 20 00:05:30 2023 +0530
+
+    concatenation of Linear Linked List
+
+[33mcommit 61dc36c3d021f2550572cdba9b5743e3b0c861d5[m
+Merge: 26f8bd5 3b4e560
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Thu Jan 19 00:15:48 2023 +0530
+
+    Merge branch 'main' of https://github.com/AadityaRajGupta/DSA
+
+[33mcommit 26f8bd5a9f67f78c8cb42788f2a693a2b829004b[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Thu Jan 19 00:15:46 2023 +0530
+
+     finding count of Nodes in Linked List
+
+[33mcommit 3b4e56069449b52be544dd33b5769e25261b4a34[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Wed Jan 18 22:57:54 2023 +0530
+
+     finding count of Nodes in Linked List
+
+[33mcommit aabd41acb01c1616cb670d01ad361f99640eb526[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Wed Jan 18 00:01:41 2023 +0530
+
+    creation of Linked List header file
+
+[33mcommit 5e0da358993fac54933348f4e4f760aa4a247886[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Mon Jan 16 22:39:28 2023 +0530
+
+     Linear Linked List Primitive operations
+
+[33mcommit 73d70213f7537aa90d35cf33eb53a6b217e6020b[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Sun Jan 15 13:14:22 2023 +0530
+
+    Program for Queue implementation using Stack
+
+[33mcommit 082e780ea4edb29f17e1de48518b29fbad0d0a61[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Sat Jan 14 16:01:05 2023 +0530
+
+    Stack implementation using Queue
+
+[33mcommit 6b226c49ad1c876a73255d73bc77a7087a7836df[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Fri Jan 13 02:40:22 2023 +0530
+
+    Program for Heap Implementation of Priority Queue
+
+[33mcommit 6ff0d43be91bdce1de1f3dcda23ab4186c0edd93[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Thu Jan 12 13:28:31 2023 +0530
+
+    Array Implementation_Priority Queue_Descending
+
+[33mcommit 2c9bbafd4f0ecd9d259bd82663447592ff488d74[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Wed Jan 11 19:40:47 2023 +0530
+
+    Array Implementation: Priority Queue(Ascending)
+
+[33mcommit 4cba9f212572c5b9edc3cb2a1f2b9f05d3e44eb6[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Tue Jan 10 21:16:41 2023 +0530
+
+    Program: ArrayImplementation of Double Ended Queue
+
+[33mcommit 3a09c7d0e9776b0396612fd299117c92fe708521[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Mon Jan 9 18:15:54 2023 +0530
+
+     Array Implementaion of CircularQueue
+
+[33mcommit 7bcb89b977a19053376cd0d84b57240b7bbad860[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Mon Jan 9 18:15:21 2023 +0530
+
+    Array Implementaion of Linear Queue
+
+[33mcommit bc1d01d88f715e6d4113f1bd9cdc9e6b36e14f9c[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Sun Jan 8 01:16:44 2023 +0530
+
+    binary tree basic operations
+
+[33mcommit 0bfe4a5b0e3cb6bd44ab623b2622cf15a42e2f71[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Mon Jan 2 11:04:53 2023 +0530
+
+    colors and keyboard ascii value code
+
+[33mcommit e7706505fed5ede127e4dc7bf4db9f5ff1a0119c[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Mon Jan 2 11:04:06 2023 +0530
+
+    starting linked list
+
+[33mcommit 0396409ec622995a216ad861efbdc9aece9d4401[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Mon Jan 2 08:43:04 2023 +0530
+
+    ALL SEARCHING PROGRAMS 😁😁👻
+
+[33mcommit f83ca8c18bca2ff17fd2152ca3e1f94eea4acad1[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Mon Jan 2 08:42:58 2023 +0530
+
+    ALL SEARCHING PROGRAMS 😁😁👻
+
+[33mcommit bb76c33c3b3afa9ba41105b0c6060f0f104c28de[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Mon Jan 2 08:42:47 2023 +0530
+
+    ALL SEARCHING PROGRAMS 😁😁👻
+
+[33mcommit 532d8388213714e3dfc1dee54f03b9d3877c1746[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Mon Jan 2 08:42:43 2023 +0530
+
+    ALL SEARCHING PROGRAMS 😁😁👻
+
+[33mcommit 4ff9281624c76d415e5d0f7c8bfc9ace9fe981b3[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Mon Jan 2 08:42:33 2023 +0530
+
+    ALL SEARCHING PROGRAMS 😁😁👻
+
+[33mcommit 78ae2dfa20add80373eecb69261e69cd3de5f0cd[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Mon Jan 2 08:42:25 2023 +0530
+
+    ALL SEARCHING PROGRAMS 😁😁👻
+
+[33mcommit 8e2c00aa111a68adb6b03bea076bde7a328b03a0[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Mon Jan 2 08:42:15 2023 +0530
+
+    ALL SEARCHING PROGRAMS 😁😁👻
+
+[33mcommit 74074644ebcc4870225b16d6dbb08471a24d08bd[m
+Merge: 4df518c bddc937
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Sun Jan 1 08:51:36 2023 +0530
+
+    Merge branch 'main' of https://github.com/AadityaRajGupta/DSA
+
+[33mcommit 4df518c9b561f91ba988910885beac6869f26ccc[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Sun Jan 1 08:51:30 2023 +0530
+
+    ALL ARRAY PROGRAMS 😁😁👻
+
+[33mcommit ed2f45982fb44dd42cb026c115c26c8ca2ea8cc9[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Sun Jan 1 08:51:25 2023 +0530
+
+    ALL ARRAY PROGRAMS 😁😁👻
+
+[33mcommit 7a9c3afb66a2700732ed85734b0ef4b155513410[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Sun Jan 1 08:51:17 2023 +0530
+
+    ALL ARRAY PROGRAMS 😁😁👻
+
+[33mcommit 788f79d2e36f17bd8b46a411d4dc4ec8554c5dc0[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Sun Jan 1 08:51:08 2023 +0530
+
+    ALL ARRAY PROGRAMS 😁😁👻
+
+[33mcommit 7cd4e472d0dfc3833df2bc8e1fcc69bc0e14b8ad[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Sun Jan 1 08:51:04 2023 +0530
+
+    ALL ARRAY PROGRAMS 😁😁👻
+
+[33mcommit 10ec4a7bc9e3f653464db344cc72035de91d32cc[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Sun Jan 1 08:50:59 2023 +0530
+
+    ALL ARRAY PROGRAMS 😁😁👻
+
+[33mcommit bf815c7fa700d269865737f7e0dc3faeee947575[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Sun Jan 1 08:50:55 2023 +0530
+
+    ALL ARRAY PROGRAMS 😁😁👻
+
+[33mcommit a9aae38eda08554f0520a818476951f7e16a1a28[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Sun Jan 1 08:50:50 2023 +0530
+
+    ALL ARRAY PROGRAMS 😁😁👻
+
+[33mcommit 7c77e1c0fac0eca342c70475c79c8bd9d62a0ff8[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Sun Jan 1 08:50:43 2023 +0530
+
+    ALL ARRAY PROGRAMS 😁😁👻
+
+[33mcommit c2c0de9c10d4aa88ce8d943fac6d7de2938abbe8[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Sun Jan 1 08:50:38 2023 +0530
+
+    ALL ARRAY PROGRAMS 😁😁👻
+
+[33mcommit db0ffdd899ca52bd64f4639aeed9d35d65d06d61[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Sun Jan 1 08:50:33 2023 +0530
+
+    ALL ARRAY PROGRAMS 😁😁👻
+
+[33mcommit c41e88c351ed5ceeddf1226a9d7ca4b40ff0194d[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Sun Jan 1 08:50:29 2023 +0530
+
+    ALL ARRAY PROGRAMS 😁😁👻
+
+[33mcommit 1e99a65093f2d1f0349be4377c9e3fc4f8ed2708[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Sun Jan 1 08:50:25 2023 +0530
+
+    ALL ARRAY PROGRAMS 😁😁👻
+
+[33mcommit e0031dc2616fa1124b992dfcf5fa0f439b449335[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Sun Jan 1 08:50:20 2023 +0530
+
+    ALL ARRAY PROGRAMS 😁😁👻
+
+[33mcommit 0a9e0e7c69c93a647de51ba3e00fb8f80202a5d7[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Sun Jan 1 08:50:16 2023 +0530
+
+    ALL ARRAY PROGRAMS 😁😁👻
+
+[33mcommit 515ccf9ef01f4e4f302b899688b3ad7dc7535c42[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Sun Jan 1 08:50:11 2023 +0530
+
+    ALL ARRAY PROGRAMS 😁😁👻
+
+[33mcommit e1859c50358915124af60ed4f6e9c873d491aa12[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Sun Jan 1 08:50:03 2023 +0530
+
+    ALL ARRAY PROGRAMS 😁😁👻
+
+[33mcommit 12c221ed343090e4371cecd3c36bd30d1ec1bd1b[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Sun Jan 1 08:49:57 2023 +0530
+
+    ALL ARRAY PROGRAMS 😁😁👻
+
+[33mcommit a36bf396f108b4e534a5e4f60c37cfae05bb1456[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Sun Jan 1 08:49:51 2023 +0530
+
+    ALL ARRAY PROGRAMS 😁😁👻
+
+[33mcommit acd1dfb711c8a4f0b09b5af230733ec078347d9d[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Sun Jan 1 08:49:38 2023 +0530
+
+    ALL ARRAY PROGRAMS 😁😁👻
+
+[33mcommit ee1000ceb26b55f86c050448c68c6808f238ddb2[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Sun Jan 1 08:49:31 2023 +0530
+
+    ALL ARRAY PROGRAMS 😁😁👻
+
+[33mcommit bddc937de8b2321b817c0882e97c50c08741664a[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Sun Jan 1 08:48:14 2023 +0530
+
+    ALL ARRAY PROGRAMS 😁😁👻
+
+[33mcommit 5c147999f453a1ae67a86367f989210acc83956e[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Wed Dec 21 00:11:04 2022 +0530
+
+    hello
+
+[33mcommit fd5feb3b01409bc1c6001045517788dacc5e6951[m
+Merge: 215db5f 4bad9db
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Wed Dec 21 00:01:35 2022 +0530
+
+    Merge branch 'main' of https://github.com/AadityaRajGupta/DSA
+
+[33mcommit 215db5ff099c46de665073b23e900da3b8b03d3a[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Tue Dec 20 23:58:04 2022 +0530
+
+    hello
+
+[33mcommit 1d0f9331528de9c617b7d3e3857813ab24bfa226[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Tue Dec 20 23:53:44 2022 +0530
+
+    polynomial_linked_list_try
+
+[33mcommit 4bad9db69f1d503fa19cad5a9e55c92b97809af3[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Tue Dec 20 22:50:05 2022 +0530
+
+    all doing on public repository_0_0_
+
+[33mcommit ee6ba3450279069f5703952b0278bf4be5693c04[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Mon Dec 19 09:37:54 2022 +0530
+
+    maximum height of tree
+
+[33mcommit a031a08c749600455059829b96055fbc5c3af017[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Sat Dec 17 03:30:28 2022 +0530
+
+    linear linked list sorting complete
+
+[33mcommit 5837fe9bfcdead50b937b0ea0fe8ffddb3c4d13c[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Sat Dec 17 01:28:29 2022 +0530
+
+    binary tree basic creation and treversal
+
+[33mcommit e6f407b008912f44c1698b5c895b6c1fd6f6472a[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Fri Dec 16 14:21:29 2022 +0530
+
+    catalon series complete
+
+[33mcommit aacbc057d2493d1e31c57637b960d5418bd01288[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Thu Dec 15 23:23:38 2022 +0530
+
+    Program to implement Linear search complete
+
+[33mcommit 0e036599694bade1ddd616d0d2aa9ab562235ae5[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Wed Dec 14 23:25:26 2022 +0530
+
+    198 house robber leetcode
+
+[33mcommit 766e14c2ec058d504cefb81db81cf290f196585c[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Mon Dec 12 02:21:42 2022 +0530
+
+    program linkedlist basic complete headnode error!!
+
+[33mcommit 4e7a4503f4c05f0c9b7edd814e78da1be706e961[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Sun Dec 11 15:03:52 2022 +0530
+
+    program queue 2 complete
+
+[33mcommit 872158deaa30537db6dc658052aceeaaec4eef44[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Sat Dec 10 12:22:46 2022 +0530
+
+    program queue 1 complete
+
+[33mcommit a442ef9866e5040b940dfe9dcdc8ec7abbc4b8de[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Fri Dec 9 01:05:06 2022 +0530
+
+    program lab 12 stack 9 complete
+
+[33mcommit 2e61f25df7c9b80b587047ab6c2d179410922f8e[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Thu Dec 8 23:46:54 2022 +0530
+
+    program lab 12 stack 8 complete
+
+[33mcommit d0af2fccb01b97331a0118de2f3d954435adde7d[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Wed Dec 7 12:42:05 2022 +0530
+
+    program lab 12 stack 7 complete
+
+[33mcommit dd8696c86d9371536856f14edbc2f98f36ba1e97[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Tue Dec 6 20:00:34 2022 +0530
+
+    program lab 12 stack 6 complete
+
+[33mcommit 8803884b86c9848d1dbbceeaa302d1fde010e1c1[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Mon Dec 5 18:21:39 2022 +0530
+
+    program lab 12 stack 5 complete
+
+[33mcommit 3e5bf3e0824c4050fd09f75b06a39523236eac1a[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Sun Dec 4 11:16:52 2022 +0530
+
+    program lab 12 stack 4 complete
+
+[33mcommit fe5572a4e6723d18c54f264988d9f45d8915da90[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Sun Dec 4 11:16:37 2022 +0530
+
+    program lab 12 stack 3 complete
+
+[33mcommit 1127c41f5a4adf0cfebcd35e025317501b88b829[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Sat Dec 3 09:08:23 2022 +0530
+
+    program lab 12 stack 2 complete
+
+[33mcommit 69b60631987b26d2a24c4c684cd0c586032f3422[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Sat Dec 3 09:08:11 2022 +0530
+
+    program lab 12 stack 1 complete
+
+[33mcommit 30d80fc4d13d3856b15a9d836e0339d36c0460ef[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Fri Dec 2 09:02:50 2022 +0530
+
+    program lab 11 stack 6 complete
+
+[33mcommit c6dbc0eba05980de6663bac24419a85339e2e053[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Fri Dec 2 09:02:35 2022 +0530
+
+    program lab 11 stack 5 complete
+
+[33mcommit 1e2ea8de9da2c3d519cb2e2643a1ff32f4366066[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Thu Dec 1 22:14:05 2022 +0530
+
+    program lab 11 stack 4 complete
+
+[33mcommit 15c02f9cd8492ad534088583d1d95d48aafb973b[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Thu Dec 1 22:13:47 2022 +0530
+
+    program lab 11 stack 3 complete
+
+[33mcommit f7f58cfbd31e81f72f368c070d0c38a5a308425b[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Wed Nov 30 21:11:09 2022 +0530
+
+    program lab 11 stack 2 complete
+
+[33mcommit 4d3cafb56ed30d4cc41e65f51a241a47788a02f6[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Wed Nov 30 21:10:57 2022 +0530
+
+    program lab 11 stack 1 complete
+
+[33mcommit 3972f4fea584c89cbd65a1fb83e182a4fa14a0d7[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Tue Nov 29 10:47:29 2022 +0530
+
+    program stack 9 complete
+
+[33mcommit 3820543833a5a9b9a4679f80da0c34f51d3e8eb5[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Tue Nov 29 10:47:21 2022 +0530
+
+    program stack 8 complete
+
+[33mcommit 562da6d31a86df246571f63d4707eae865fbf8f7[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Mon Nov 28 23:09:23 2022 +0530
+
+    program stack 7 complete
+
+[33mcommit 985a26c0b66431332dfde9a0ebb98d71aabc5a35[m
+Author: Aaditya Raj Gupta <aadityarajgupta333@gmail.com>
+Date:   Mon Nov 28 00:08:09 2022 +0530
+
+    program stack 6 complete
